@@ -5,9 +5,10 @@ import csv
 client = openai.OpenAI(api_key="your key here")
 
 
-def decion_tree(inpute):
+def decion_tree(input):
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
+        temperature=0,
         messages=[
             {"role": "system", "content":
                 """
@@ -239,15 +240,16 @@ def decion_tree(inpute):
 
                 """
              },
-            {"role": "user", "content": str(inpute)}
+            {"role": "user", "content": str(input)}
         ]
     )
     return completion.choices[0].message.content
 
 
-def associating_rule_mining(inpute):
+def associating_rule_mining(input):
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
+        temperature=0,
         messages=[
             {"role": "system", "content":
                 """
@@ -332,15 +334,16 @@ Explanation: The combination of high rationality(Flag_High_Rationality) signific
 
                 """
              },
-            {"role": "user", "content": str(inpute)}
+            {"role": "user", "content": str(input)}
         ]
     )
     return completion.choices[0].message.content
 
 
-def no_knowledge(inpute):
+def no_knowledge(input):
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
+        temperature=0,
         messages=[
             {"role": "system", "content":
                 """
@@ -348,7 +351,7 @@ def no_knowledge(inpute):
 
                 """
              },
-            {"role": "user", "content": str(inpute)}
+            {"role": "user", "content": str(input)}
         ]
     )
     return completion.choices[0].message.content
