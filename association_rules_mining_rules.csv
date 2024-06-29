@@ -1,0 +1,76 @@
+Additional Knowledge Base:
+Here are the association rules mined from user attributes and their impact on identifying harmful messages:
+Rule 1:
+Antecedents: Flag_Low_Rationality, Flag_Ex_High_SD
+Consequents: discomfort
+Support: 0.0014
+Confidence: 0.78
+Lift: 2.31
+Explanation: When users exhibit low rationality and extremely high standard deviation in identity, there is a strong association with message content leading to discomfort (discomfort), with a lift of 2.31.
+
+Rule 2:
+Antecedents: Flag_Very_High_Irrationality, Flag_Low_Rationality
+Consequents: discomfort
+Support: 0.0025
+Confidence: 0.72
+Lift: 2.13
+Explanation: The combination of very high irrationality and low rationality significantly correlates with messages causing discomfort (discomfort), with a lift of 2.13.
+
+Rule 3:
+Antecedents: Flag_Very_High_Irrationality, Flag_Low_Rationality, Flag_Ex_High_SD
+Consequents: discomfort
+Support: 0.0014
+Confidence: 0.78
+Lift: 2.31
+Explanation: When users display very high irrationality, low rationality, and extremely high standard deviation in identity, there is a strong association with message content leading to discomfort (discomfort), with a lift of 2.31.
+
+Rule 4:
+Antecedents: Flag_Low_Rationality, Flag_Ex_High_SD
+Consequents: discomfort
+Support: 0.0014
+Confidence: 0.78
+Lift: 19.00
+Explanation: Low rationality and extremely high standard deviation in identity are strongly associated with very high irrationality and messages causing discomfort (discomfort), with a lift of 19.00.
+
+Rule 5:
+Antecedents: Flag_Very_High_Irrationality, Flag_Very_High_SD, Flag_Low_Rationality
+Consequents: discomfort
+Support: 0.0012
+Confidence: 0.66
+Lift: 1.95
+Explanation: The combination of very high irrationality, very high standard deviation in identity, and low rationality moderately correlates with messages causing discomfort (discomfort), with a lift of 1.95.
+
+Rule 6:
+Antecedents: Flag_Average_Lower_SD
+Consequents: comfort
+Support: 0.090952143
+Confidence: 0.737309825
+Lift: 1.114630403
+Explanation: The combination of average lower standard deviation(Flag_Average_Lower_SD) significantly correlates with comfort, with a lift of 1.114630403.
+
+Rule 7:
+Antecedents: Flag_Low_SD
+Consequents: comfort
+Support: 0.078077999
+Confidence: 0.920206718
+Lift: 1.391125346
+
+Explanation: The combination of low standard deviation(Flag_Low_SD) significantly correlates with comfort, with a lift of 1.391125346.
+
+Rule 8:
+Antecedents: Flag_Average_Lower_Irrationality
+Consequents: comfort
+Support: 0.098529296
+Confidence: 0.708564581
+Lift: 1.071174692
+
+Explanation: The combination of average lower irrationality(Flag_Average_Lower_Irrationality) significantly correlates with comfort, with a lift of 1.071174692.
+
+Rule 9:
+Antecedents: Flag_High_Rationality
+Consequents: comfort
+Support: 0.086067335
+Confidence: 0.700799771
+Lift: 1.059436217
+
+Explanation: The combination of high rationality(Flag_High_Rationality) significantly correlates with comfort, with a lift of 1.059436217.

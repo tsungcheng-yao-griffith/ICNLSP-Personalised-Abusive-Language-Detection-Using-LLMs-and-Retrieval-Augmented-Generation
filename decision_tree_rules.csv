@@ -1,0 +1,221 @@
+           Rule 1
+           Conditions:
+           Flag_Low_SD: is not presented
+           Flag_Average_Lower_SD: is not presented
+           Flag_Average_Higher_Rationality: is not presented
+           Flag_Very_High_Rationality: is not presented
+           Flag_Average_Lower_Irrationality: is presented
+           Flag_Very_Low_Rationality: is presented
+           Flag_Ex_High_SD: is presented
+           Flag_Average_Lower_Rationality: is presented
+           Class Distribution: [213, 273]
+           Probabilities: [0.4383, 0.5617]
+           Conclusion: Class 1 (harmful)
+           Explanation: Users with very low rationality, high standard deviation, and average lower irrationality tend to have harmful messages.
+            
+            Rule 2
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is not presented
+            Flag_Average_Higher_Rationality: is not presented
+            Flag_Very_High_Rationality: is not presented
+            Flag_Average_Lower_Irrationality: is not presented
+            Flag_Very_High_SD: is not presented
+            Flag_Low_Rationality: is presented
+            Flag_Ex_High_SD: is presented
+            Class
+            Distribution: [139, 11]
+            Probabilities: [0.9267, 0.0733]
+
+            Conclusion: Class 0(not harmful)
+            Explanation: Users with low rationality and extremely high standard deviation are mostly associated with not harmful messages.
+
+            Rule 3
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is not presented
+            Flag_Average_Higher_Rationality: is not presented
+            Flag_Very_High_Rationality: is not presented
+            Flag_Average_Lower_Irrationality: is presented
+            Flag_Very_High_SD: is not presented
+            Flag_Low_Rationality: is not presented
+            Flag_High_Irrationality: is presented
+            Flag_Average_Lower_Rationality: is not presented
+            Class
+            Distribution: [147, 20]
+            Probabilities: [0.8802, 0.1198]
+
+            Conclusion: Class 0(not harmful)
+
+            Explanation: Users with high irrationality and average lower irrationality are mostly not harmful.
+
+            Rule 4 Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is not presented
+            Flag_Average_Higher_Rationality: is not presented
+            Flag_Very_High_Rationality: is not presented
+            Flag_Very_High_SD: is presented
+            Flag_Low_Rationality: is not presented
+            Flag_High_Irrationality: is not presented
+            Class
+            Distribution: [154, 6]
+            Probabilities: [0.9625, 0.0375]
+
+            Conclusion: Class 0(not harmful)
+
+            Explanation: Users  with very high standard deviation and no specific irrationality flags are generally not harmful.
+
+            Rule 5
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is not presented
+            Flag_Average_Higher_Rationality: is not presented
+            Flag_Very_High_Rationality: is not presented
+            Flag_Very_High_SD: is presented
+            Flag_Low_Rationality: is presented
+            Class
+            Distribution: [32, 126]
+            Probabilities: [0.2025, 0.7975]
+
+            Conclusion: Class 1(harmful)
+
+            Explanation: Users
+            with very high standard deviation and low rationality are mostly associated with harmful messages.
+
+            Rule 6
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is not presented
+            Flag_Average_Higher_Rationality: is not presented
+            Flag_Very_High_Rationality: is presented
+            Flag_Very_High_SD: is not presented
+            Flag_Low_Rationality: is not presented
+            Flag_Very_High_Irrationality: is not presented
+            Class
+            Distribution: [68, 95]
+            Probabilities: [0.4172, 0.5828]
+
+            Conclusion: Class 1(harmful)
+
+            Explanation: Users with very high rationality and no other specific flags tend to be slightly more associated with harmful messages.
+
+            Rule 7
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is presented
+            Flag_Very_Low_Rationality: is not presented
+            Flag_High_Rationality: is not presented
+            Flag_Very_High_Rationality: is not presented
+            Flag_Average_Higher_Rationality: is not presented
+            Flag_Average_Higher_Irrationality: is not presented
+            Flag_Low_Rationality: is presented
+            Class
+            Distribution: [416, 68]
+            Probabilities: [0.8595, 0.1405]
+
+            Conclusion: Class 0(not harmful)
+
+            Explanation: Users with average lower standard deviation and low rationality are mostly associated with not harmful messages.
+
+            Rule 8
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is presented
+            Flag_Very_Low_Rationality: is not presented
+            Flag_High_Rationality: is not presented
+            Flag_Very_High_Rationality: is not presented
+            Flag_Average_Higher_Rationality: is not presented
+            Flag_Average_Lower_Irrationality: is presented
+            Class
+            Distribution: [1092, 179]
+            Probabilities: [0.8592, 0.1408]
+
+            Conclusion: Class 0(not harmful)
+
+            Explanation: Users with average lower standard deviation and average lower irrationality are mostly not harmful.
+
+            Rule 9
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is presented
+            Flag_Very_Low_Rationality: is not presented
+            Flag_High_Rationality: is not presented
+            Flag_Very_High_Rationality: is not presented
+            Class
+            Distribution: [164, 2]
+            Probabilities: [0.9880, 0.0120]
+
+            Conclusion: Class 0(not harmful)
+
+            Explanation: Users with average lower standard deviation and no other specific flags are mostly associated with not harmful messages.
+
+            Rule 10
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is presented
+            Flag_Very_Low_Rationality: is not presented
+            Flag_High_Rationality: is not presented
+            Flag_Very_High_Rationality: is presented
+            Class
+            Distribution: [520, 114]
+            Probabilities: [0.8202, 0.1798]
+
+            Conclusion: Class 0(not harmful)
+
+            Explanation: Users with average lower standard deviation and very high rationality are generally not harmful.
+
+            Rule 11
+            Conditions:
+
+            Flag_Low_SD: is not presented
+            Flag_Average_Lower_SD: is presented
+            Flag_Very_Low_Rationality: is not presented
+            Flag_High_Rationality: is presented
+            Flag_Average_Higher_Irrationality: is not presented
+            Class
+            Distribution: [710, 75]
+            Probabilities: [0.9045, 0.0955]
+
+            Conclusion: Class 0(not harmful)
+
+            Explanation: Users with average lower standard deviation and high rationality are mostly associated with not harmful messages.
+
+            Rule 12
+            Conditions:
+
+            Flag_Low_SD: is presented
+            Flag_High_Rationality: is not presented
+            Flag_High_SD: is not presented
+            Flag_Low_Irrationality: is presented
+            Class
+            Distribution: [23, 143]
+            Probabilities: [0.1389, 0.8611]
+
+            Conclusion: Class 1(harmful)
+
+            Explanation: Users with low standard deviation and low irrationality are mostly associated with harmful messages.
+
+            Rule 13
+            Conditions:
+
+            Flag_Low_SD: is presented
+            Flag_High_Rationality: is presented
+            Flag_High_SD: is not presented
+            Flag_High_Irrationality: is presented
+            Class
+            Distribution: [428, 60]
+            Probabilities: [0.8776, 0.1224]
+
+            Conclusion: Class 0(not harmful)
+
+            Explanation: Users with low standard deviation, high rationality, and high irrationality are generally not harmful.
+           
